@@ -1,131 +1,304 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Farisha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        body{
-            background-color: transparent;
-            font-family: sans-serif;
-            color: black;
-        }
-        p {
-            font-size: 16px;
-            font-weight: 300;
-            line-height: 1.6;
-            font-family: 'Poppins';
-        }
-        h2{
-            color: #2a1a5e
-            
-        }
-        
-    </style>
-    <title>Haiiii</title>
-    </head>
-        <header 
-        style="font-family: Helvetica; 
+    body{
+        font-family: Arial, Helvetica, sans-serif
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .profile-image img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #f4bdd9;
+    }
+
+    .text-section {
+        flex: 1;
+    }
+
+    .text-section h1 {
+        font-size: 24px;
+        margin: 0;
+        margin-top: 5px;
         background-color: #ffe6f2;
-        font-family: Arial, sans-serif;
+        width: 100%;
+    }
+
+    .text-section h1 span {
+        color: #FF69B4;
+        font-weight: bold;
+    }
+
+    .text-section p {
+        margin-top: 0;
+        font-size: 16px;
+        color: #555;
         color: #2a1a5e;
-        text-align: center;
-        padding: 50px;">
+        padding: 50px;
         
-        <center>
-        <b>ABOUT ME</b>
-        <p>
-            I am Farisha, First-year Information Systems student with a foundation in Java programming and experience in data analysis 
-            through database design courses. Has a basic certificate in Data Science and SQL, as well as experience as a tutor for UTBK 
-            General Reasoning which develops communication, leadership, and problem-solving skills. Focused on continuously 
-            developing technical capabilities. I believe that every challenge is an opportunity to grow, and I love sharing knowledge with others.
-            
 
-        </p>
-        <p>
-            <a href="https://www.linkedin.com/in/farisha-isnaya/">
-                <img src="logo.webp" height="20px" width="20px">
-            </a>
-            <a href="https://www.instagram.com/farisnayaa/">
-                <img src="logo2.jpeg" height="20px" width="20px">
-            </a>
-        </p>
-        </center>
-        </header>
-    <center>
-    <h2>Biodata Diri</h2>
-    <br>
-    <table cellpadding="10">
-        <tr>
-            <td>NIM</td>
-            <td>: 245150400111065</td>
-            <td rowspan="5"><img src="foto.jpg" height="180" width="270"></td>
-        </tr>
-        <tr>
-            <td>Nama</td>
-            <td>: Farisha Isnaya Huda</td>
-        </tr>
-        <tr>
-            <td>Fakultas</td>
-            <td>: Ilmu Komputer</td>
-        </tr>
-        <tr>
-            <td>Program Studi</td>
-            <td>: Sistem Informasi</td>
-        </tr>
-        <tr>
-            <td>Asal</td>
-            <td>: Blitar</td>
-        </tr>
-        <tr>
-            <td colspan="3" align="center">
-                <iframe width="400" height="250" src="https://www.google.com/maps/embed?pb=!4v1739939626179!6m8!1m7!1syDYDmt79O4s2t-v-9K1C5g!2m2!1d-8.09098257718249!2d112.1835824353144!3f168.8013502261418!4f1.9153926769753014!5f0.7820865974627469" allowfullscreen></iframe>
-            </td>
-        </tr>
-    </table>
-    </center>
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .social-icons a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .social-icons a i {
+        font-size: 20px;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #2a1a5e;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .btn:hover {
+        background-color: #f4bdd9;
+        color:#2a1a5e
+    }
+    .section
+     {
+        color: #2a1a5e; 
+    }
+
+    .timeline {
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background-color: #f4bdd9;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding: 10px 0 10px 30px;
+            margin-bottom: 20px;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: 2px;
+            top: 12px;
+            width: 12px;
+            height: 12px;
+            background-color: #f4bdd9;
+            border-radius: 50%;
+        }
+
+        .timeline-item h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #FF69B4;
+        }
+
+        .timeline-item p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #555;
+        }
+    .list {
+        color: #555;
+        font-size: 14px;
+
+    }
+
+    /* Responsive design adjustments */
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-image img {
+            margin-bottom: 20px;
+        }
+    }
+
    
-    <div class="section">
-        <h2>Pengalaman Kerja</h2>
-        <ul>
-            <li><strong>Tutor UTBK</strong> - Brainest Indonesia (Agustus 2024 - Sekarang)</li>
-        </ul>
-    </div>
+    .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            color: #2a1a5e
+        }
 
-    <div class="section">
-        <h2>Pendidikan</h2>
-        <ul>
-            <li><strong>Universitas Brawijaya</strong> - Sistem Informasi (2024 - Sekarang) IPK: 3.86/4.00</li>
-            <li><strong>MAN 1 Blitar</strong> (2021 - 2024) Nilai: 89.16/100</li>
-        </ul>
+        .activity {
+            text-align: center;
+        }
+
+        .activity  img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Responsif: Jika layar kecil, ubah menjadi 2 kolom */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-image">
+            <img src="foto.jpg" alt="Profile Image">
+        </div>
+        <div class="text-section">
+            <h1>Hey I'm <span>Farisha</span></h1>
+            <p>First-year Information Systems student with a foundation in Java programming and experience in data analysis 
+                through database design courses. Has a basic certificate in Data Science and SQL, as well as experience as a tutor for UTBK 
+                General Reasoning which develops communication, leadership, and problem-solving skills. Focused on continuously 
+                developing technical capabilities. I believe that every challenge is an opportunity to grow, and I love sharing knowledge with others.</p>
+            <div class="social-icons">
+                <a href="https://github.com/farichao/farichao.github.io.git"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/in/farisnayaa"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/farisha-isnaya/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="resume.pdf" class="btn" download="resume.pdf">Download CV</a>
+        </div>
     </div>
     
+            <!-- Experience Section -->
     <div class="section">
-        <h2>Pengalaman Organisasi</h2>
-        <ul>
-            <li><strong>Himpunan Mahasiswa Sistem Informasi Universitas Brawijaya</strong> - Staff Muda (Sep 2024 - Des 2024)</li>
-            <li><strong>Pameran Seni Budaya MAN 1 Blitar</strong> - Ketua Panitia (Mei 2022 - Jul 2022)</li>
-        </ul>
+        <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>UTBK Tutor in Brainest Indonesia</h3>
+                    <p>August 2024 - Present</p>
+                    <p><ul class="list">
+                        <li>Developed materials and questions for General Reasoning and Mathematics subtests</li>
+                        <li>Developed monthly tryout questions for General Reasoning subtests</li>
+                        <li>taught 350+ students, with a focus on concept understanding and interactive learning.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Education Section -->
+    <div class="section">
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Bachelor's in Computer Science</h3>
+                <p>University of Brawijaya, 2024 - Present</p>
+                <p>Sistem Informasi (2024 - Present) <br> GPA: 3.86/4.00</p>
+            </div>
+            <div class="timeline-item">
+                <h3>High School - MAN 1 Blitar</h3>
+                <p>2021 - 2024</p>
+                <ul class="list">
+                    <li>Graduated as the third-best student.</li>
+                    <li>Received an educational scholarship for the entire duration of study.</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
+    <!-- Organisational Experience Section -->
     <div class="section">
-        <h2>Keterampilan</h2>
-        <ul>
-            <li><strong>Hard Skills:</strong> Java (dasar), SQL, Desain Basis Data, Microsoft Office, Google Workspace</li>
-            <li><strong>Soft Skills:</strong> Komunikasi, Kepemimpinan, Problem Solving, Manajemen Waktu</li>
-        </ul>
+        <h2>Organizational Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Himpunan Mahasiswa Sistem Informasi Universitas Brawijaya - Senior Staff</h3>
+                <p>February 2025 - Present</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Pameran Seni Budaya MAN 1 Blitar - Committee Chair</h3>
+                <p>May 2022 - July 2022</p>
+            </div>
+        </div>
     </div>
 
+    <!-- Skills, Achievements & Other Experience Section -->
     <div class="section">
-        <h2>Prestasi</h2>
-        <ul>
-            <li>Juara 3 Olimpiade Teknik Kimia Universitas Jember (2023)</li>
-            <li>Juara Harapan 2 Olimpiade Matematika UIN Malang (2023)</li>
-            <li>Juara 2 Olimpiade Matematika Terintegrasi Blitar (2023)</li>
-        </ul>
+        <h2>Skills, Achievements & Other Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Hard Skills</h3>
+                <p>Java Programming (basic), Database Design, SQL (basic), Microsoft Office Suite, Google Workspace</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Soft Skills</h3>
+                <p>Communication, Leadership, Problem-Solving, Time Management</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Achievements</h3>
+                <ul class="list">
+                    <li>3rd Place - Chemical Engineering Olympiad, University of Jember (2023)</li>
+                    <li>Second Runner-up - Mathematics Olympiad, UIN Malang (2023)</li>
+                    <li>2nd Place - Integrated Mathematics Olympiad, Blitar (2023)</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Scientific Journal</h3>
+                <p>Biosurfactant from Sengon Leaves and Aloe Vera as an Environmentally Friendly Detergent Safe for Dermatitis Patients (2023)</p>
+            </div>
+        </div>
     </div>
 
 
-
-    
+    <div class="gallery">
+        <h1>This is a gallery showcasing my recent activities. <br>Feel free to explore and take a look!</h1>
+        <div class="activity">
+            <img src="almet.jpg">
+            <p>First meeting with friends from<br>the computer science faculty</p>
+        </div>
+        <div class="activity">
+            <img src="staffmut.jpg">
+            <p>Memorable photos with<br> KBMDSI young staff</p>
+        </div>
+        <div class="activity">
+            <img src="sinau.jpg">
+            <p>Work program at KBMDSI<br>"Sinau Bareng"</p>
+        </div>
+        <div class="activity">
+            <img src="kp.jpg">
+            <p>First gathering as expert staff of the keilmuan dan pengajaran<br>(KP) department of KBMDSI</p>
+        </div>
+        <div class="activity">
+            <img src="zoom.png">
+            <p>teaching 200+ students in one live class</p>
+        </div>
+    </div>
 </body>
 </html>
